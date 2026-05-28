@@ -9,8 +9,12 @@ Compiled releases for [jariCruz/odoo-docker](https://github.com/jariCruz/odoo-do
 Run this once to install all tools and set up shell commands:
 
 ```bash
-curl -fsSL https://github.com/jariCruz/odoo-docker-releases/releases/latest/download/install.sh | bash && source ~/.bashrc
+curl -fsSL https://github.com/jariCruz/odoo-docker-releases/releases/latest/download/install.sh | bash
 ```
+
+Then **open a new terminal** — the commands (`new-project`, `remove-project`, `odoo-help`, etc.) will be ready to use.
+
+> Works on macOS, Linux, and WSL.
 
 This will:
 - Download the latest `new-project` and `remove-project` binaries to `~/.local/bin`
