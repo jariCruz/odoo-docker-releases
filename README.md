@@ -1,15 +1,14 @@
-# odoo-docker releases
-
-Compiled releases for [jariCruz/odoo-docker](https://github.com/jariCruz/odoo-docker) (private).
-
----
-
 ## Install
 
 Run this once to install all tools and set up shell commands:
 
+Windows(WSL2)/Linux
 ```bash
-curl -fsSL https://github.com/jariCruz/odoo-docker-releases/releases/latest/download/install.sh | bash
+curl -fsSL https://github.com/jariCruz/odoo-docker-releases/releases/latest/download/install.sh | bash && source ~/.bashrc
+```
+MacOS
+```bash
+curl -fsSL https://github.com/jariCruz/odoo-docker-releases/releases/latest/download/install.sh | bash && source ~/.zshrc
 ```
 
 Then **open a new terminal** — the commands (`new-project`, `remove-project`, `odoo-help`, etc.) will be ready to use.
@@ -60,13 +59,3 @@ This removes the binaries from `~/.local/bin` and cleans up your `~/.bashrc` / `
 - Linux / macOS / WSL (Ubuntu recommended)
 - `docker` and `docker compose` installed
 - `curl` installed (pre-installed on most systems)
-
----
-
-## Share with someone
-
-Just send them the one-line install command:
-
-```bash
-curl -fsSL https://github.com/jariCruz/odoo-docker-releases/releases/latest/download/install.sh | bash && source ~/.bashrc
-```
